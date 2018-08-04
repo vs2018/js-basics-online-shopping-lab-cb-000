@@ -43,10 +43,13 @@ function viewCart() {
       if (i === 0) {
         result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `
       } else if (i !== cart.length - 1) {
+        result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `
+      } else {
         result += `and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
       }
     }
   }
+  return result
 }
 
 function total() {
