@@ -71,7 +71,7 @@ function removeFromCart(item) {
     }
 
   }
-  if ()
+  if (length === cart.length)
   return cart
 }
 
