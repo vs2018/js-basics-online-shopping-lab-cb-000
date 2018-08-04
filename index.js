@@ -29,7 +29,7 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   }
-  var result = "In your cart, you have, "
+  var result = "In your cart, you have "
   for(var i = 0; i < cart.length; i++) {
     if (cart.length === 1) {
       result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
