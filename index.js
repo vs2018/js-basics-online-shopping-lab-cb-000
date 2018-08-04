@@ -38,7 +38,12 @@ function viewCart() {
         result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `
       } else {
         result += `and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
-
+      }
+    } else {
+      if (i === 0) {
+        result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `
+      } else if (i !== cart.length - 1) {
+        result += `and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
       }
     }
   }
