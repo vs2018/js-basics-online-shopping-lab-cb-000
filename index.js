@@ -17,7 +17,7 @@ function getRandomIntInclusive(min, max) {
 
 function addToCart(item) {
   var array = [];
-  var cart = {}
+  var cart = {};
   cart.itemName = item;
   cart.itemPrice = getRandomIntInclusive(0, 100);
   array.push(cart)
