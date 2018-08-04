@@ -82,7 +82,7 @@ function placeOrder(cardNumber) {
   if (cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you."
   }
-  var array = cart.slice(0);
+  var cost = total()
 
   cart.length = 0
 
