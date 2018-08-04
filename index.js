@@ -20,7 +20,7 @@ function addToCart(item) {
   var cart = {}
   cart.itemName = item;
   cart.itemPrice = getRandomIntInclusive(0, 100);
-
+  array.push(cart)
 
   `${cart.itemName} has been added to your cart.`
 }
