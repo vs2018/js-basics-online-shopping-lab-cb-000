@@ -32,7 +32,7 @@ function viewCart() {
   var result = "In your cart, you have, "
   for(var i = 0; i < cart.length; i++) {
     if (cart.length === 1) {
-      `${cart[i].itemName} at ${}$17`
+      `${cart[i]['itemName']} at ${cart[i]['itemPrice']}$17`
     }
   }
 }
