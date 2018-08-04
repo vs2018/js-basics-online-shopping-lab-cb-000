@@ -1,15 +1,6 @@
 var cart = [];
 
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-}
-
 function getCart() {
-
-
  return cart;
 }
 
@@ -18,8 +9,17 @@ function setCart(c) {
   return cart;
 }
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
 function addToCart(item) {
- // write your code here
+  var cart = {
+    itemName: item,
+    itemPrice: getRandomInt(0, 100)
+  }
 }
 
 function viewCart() {
