@@ -7,12 +7,9 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
-function getCart(name) {
+function getCart() {
 
-  var cart = {
-    itemName: name, 
-    itemPrice: getRandomInt(0, 100)
-  }
+
  return cart;
 }
 
