@@ -17,8 +17,8 @@ function getRandomIntInclusive(min, max) {
 
 function addToCart(item) {
   var cart = {}
-  cart.itemName = item
-  cart.itemPrice = getRandomIntInclusive(0, 100)
+  cart.itemName = item;
+  cart.itemPrice = getRandomIntInclusive(0, 100);
 
 
   `${cart.itemName} has been added to your cart.`
