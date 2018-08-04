@@ -18,8 +18,8 @@ function getRandomIntInclusive(min, max) {
 function addToCart(item) {
   var cart = [];
   var obj = {};
-  obj.itemName = item;
-  obj.itemPrice = getRandomIntInclusive(0, 100);
+  obj['itemName'] = item;
+  obj['itemPrice'] = getRandomIntInclusive(0, 100);
   cart.push(obj);
 
   return `${item} has been added to your cart.`;
