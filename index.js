@@ -20,6 +20,8 @@ function addToCart(item) {
     itemName: item,
     itemPrice: getRandomInt(0, 100)
   }
+
+  `${cart.itemName} has been added to your cart.`
 }
 
 function viewCart() {
