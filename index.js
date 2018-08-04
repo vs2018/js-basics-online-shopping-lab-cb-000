@@ -16,10 +16,10 @@ function getRandomInt(min, max) {
 }
 
 function addToCart(item) {
-  var cart = {
-    itemName: item,
-    itemPrice: getRandomInt(0, 100)
-  }
+  var cart = {}
+  cart.itemName = item
+  cart.itemPrice = getRandomInt(0, 100)
+  
 
   `${cart.itemName} has been added to your cart.`
 }
