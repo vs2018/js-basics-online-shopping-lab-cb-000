@@ -32,7 +32,14 @@ function viewCart() {
   var result = "In your cart, you have, "
   for(var i = 0; i < cart.length; i++) {
     if (cart.length === 1) {
-      `${cart[i]['itemName']} at $${cart[i]['itemPrice']}`
+      result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
+    } else if (cart.length === 2) {
+      if (i === 0) {
+        result += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `
+      } else {
+        result += `and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
+
+      }
     }
   }
 }
