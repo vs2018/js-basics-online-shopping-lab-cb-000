@@ -22,7 +22,7 @@ function addToCart(item) {
   cart.itemPrice = getRandomIntInclusive(0, 100);
   array.push(cart);
 
-  `${item} has been added to your cart.`;
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
